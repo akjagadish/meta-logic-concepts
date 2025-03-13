@@ -49,8 +49,8 @@ python meta_train.py --n_meta_train 10000 --n_meta_valid 100 --n_meta_test 100 -
 
 The only changes are:
 - We can use more architectures: adjust parameter `--model` to MLP, Transformer, or LSTM
-- Choose the prior by `--dataset' which can be wudsy (SimpleBoolean prior) or fol (FOL prior)
-- For evaluation use `--eval` and `--eval_wudsy`
+- Choose the prior by `--dataset` which can be wudsy (SimpleBoolean prior) or fol (FOL prior)
+- For evaluation, use `--eval` and `--eval_wudsy`
 
 # Description of the pipeline
 
