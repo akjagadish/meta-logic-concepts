@@ -20,7 +20,7 @@ pip install higher
 ```
 
 
-# Quickstart
+# Quickstart (Rational Rules experiment)
 1. Here is a command you can use to meta-train a logical rule learner:
 ```
 python meta_train.py --n_meta_train 10000 --n_meta_valid 100 --n_meta_test 100 --dataset dnf --min_n_features 4 --max_n_features 4 --min_n_train 9 --max_n_train 9 --train_batch_size 1 --b 3 --n_hidden 128 --n_layer 5 --dropout 0.1 --n_epochs 1 --eval_every 100 --learning_rate 0.0005 --inner_lr 0.1 --model_name tmp --weight_dir weights/ --log_dir logs/ --epochs_per_episode 1
@@ -38,7 +38,6 @@ python meta_train.py --n_meta_train 10000 --n_meta_valid 100 --n_meta_test 100 -
 
 ```
 
-
 4. Parameters to play around with:
 - If we decide to make the model more general, adjust `--min_n_features`, `--max_n_features`, `--min_n_train`, and `--max_n_train`.
 - `--train_batch_size`, `--inner_lr`; probably the most important
@@ -46,6 +45,12 @@ python meta_train.py --n_meta_train 10000 --n_meta_valid 100 --n_meta_test 100 -
 - Architectural hyperparameters: `--n_hidden`, `--n_layer`, `--dropout`
 - `--epochs_per_episode`: Probably not worth adjusting
 
+# Logical Primitives of Thought experiment
+
+The only changes are:
+- We can use more architectures: adjust parameter `--model` to MLP, Transformer, or LSTM
+- Choose the prior by `--dataset' which can be wudsy (SimpleBoolean prior) or fol (FOL prior)
+- For evaluation use `--eval` and `--eval_wudsy`
 
 # Description of the pipeline
 
