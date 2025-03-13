@@ -70,9 +70,9 @@ python meta_train.py --n_meta_train 10000 --n_meta_valid 100 --n_meta_test 100 -
 - `dataset_iterators.py`: Functions that yield a rule sampled from the prior
 - `evaluations.py`: Evaluation functions (beyond the loss automatically returned by models)
 - `lr_scheduler.py`: Functions for learning rate scheduling
-- `models.py`: Defining model architectures
+- `models.py`: Defining model architectures: MLPClassifierRationalRules (for Rational Rules experiment); MLPClassifier, Transformer, LSTM (for Logical Primitives of Thought experiment)
 - `utils.py`: Some miscellaneous helper functions
-- `dnf_grammar.py`: Specifies the RR_DNF prior from the Rational Rules paper
+- `dnf_grammar.py`: Specifies the variour grammars: RR_DNF prior from the Rational Rules paper (DNFHypothesis); SimpleBoolean (SimpleBooleanHypothesis), FOL (FOLHypothesis) from Logical Primitives of Thought paper
 - `training.py`: Classes for (meta-)training models
 
 
