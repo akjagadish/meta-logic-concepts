@@ -80,4 +80,7 @@ The only changes are:
 - `dnf_grammar.py`: Specifies the variour grammars: RR_DNF prior from the Rational Rules paper (DNFHypothesis); SimpleBoolean (SimpleBooleanHypothesis), FOL (FOLHypothesis) from Logical Primitives of Thought paper
 - `training.py`: Classes for (meta-)training models
 
+# Acknowledgements
+This repository builds on the repository at [tommccoy1/inductive-bias-distillation](https://github.com/tommccoy1/inductive-bias-distillation).
+
 
